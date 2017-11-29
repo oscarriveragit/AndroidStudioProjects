@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.aibarra.skiing.Modelo.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/portada1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/iconoblack" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Introduce tu Password"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="81dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:ems="10"
+        android:hint="Introduce tu Usuario"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@color/colorAccent" />
+
+    <CheckBox
+        android:id="@+id/RecordarPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_alignTop="@+id/editTextPassword"
+        android:layout_marginTop="60dp"
+        android:text="Recuerdame"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/RessetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="Has olvidado tu contraseña?"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RecordarPassword"
+        android:layout_alignBottom="@+id/RecordarPassword"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:background="@android:color/transparent"
+        android:text="Log In"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+</RelativeLayout>

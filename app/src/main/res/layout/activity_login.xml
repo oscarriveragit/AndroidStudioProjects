@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.aibarra.skiing.Modelo.LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:ems="10"
+        android:hint="Introduce tu usuario"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Introduce tu Contraseña"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <CheckBox
+        android:id="@+id/RecordarPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="25dp"
+        android:text="Recuerdame"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/RessetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:clickable="true"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="Has olvidado tu contraseña?"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RecordarPassword"
+        android:layout_alignBottom="@+id/RecordarPassword"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:text="Log In"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="247dp" />
+</RelativeLayout>

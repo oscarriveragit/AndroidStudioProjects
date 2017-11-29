@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.aibarra.skiing.Modelo.registerActivity">
+
+    <EditText
+        android:id="@+id/editTextNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Introduce tu nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextApellidosUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextNombreUsuario"
+        android:layout_below="@+id/editTextNombreUsuario"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Introduce tus apellidos"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextApellidosUsuario"
+        android:layout_below="@+id/editTextApellidosUsuario"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Que usuario quieres"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextUsuario"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/botonRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorAccent"
+        android:text="Registrate"
+        android:textColor="@color/cardview_light_background" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonRegistrar"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:text="Recuerdame" />
+</RelativeLayout>

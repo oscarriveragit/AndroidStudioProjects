@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "255887258380",
+    "project_id": "firebase-skiapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255887258380:android:c3c7fe08ad65785e",
+        "android_client_info": {
+          "package_name": "net.aibarra.skiing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255887258380-4bmhinj2l3e5abhes0mf4sioj9vjp7mn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOcUV4WRa7TU-eQPr7icIof5VwIh18M7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-110074002-3"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
